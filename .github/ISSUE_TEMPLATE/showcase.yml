@@ -1,0 +1,26 @@
+name: Showcase a profile
+description: Designed your profile with profile-cover? Show it off.
+title: "[showcase] "
+labels: [showcase]
+body:
+  - type: input
+    id: profile
+    attributes:
+      label: Your profile
+      placeholder: https://github.com/username
+    validations:
+      required: true
+  - type: dropdown
+    id: archetype
+    attributes:
+      label: Archetype
+      options: [ledger, buildlog, stewardship, custom]
+    validations:
+      required: true
+  - type: textarea
+    id: shot
+    attributes:
+      label: Screenshot
+      description: Light or dark, either is fine.
+    validations:
+      required: true
