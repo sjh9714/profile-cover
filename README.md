@@ -32,6 +32,8 @@ npx skills add sjh9714/profile-cover
 pip install fonttools uharfbuzz
 ```
 
+In fx: `/skills install sjh9714/profile-cover --skill profile-cover`
+
 Then, in any session:
 
 > Design my GitHub profile README.
