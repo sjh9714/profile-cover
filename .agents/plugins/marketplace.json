@@ -1,0 +1,20 @@
+{
+  "name": "profile-cover",
+  "interface": {
+    "displayName": "Profile Cover"
+  },
+  "plugins": [
+    {
+      "name": "profile-cover",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

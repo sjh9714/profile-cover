@@ -1,0 +1,21 @@
+{
+  "name": "profile-cover",
+  "description": "Design your GitHub profile README as an editorial page. Kerned serif mastheads as path-outlined SVGs with zero external resources, light and dark pairs, GitHub-native markdown links, and deterministic checks. Nothing that can show a broken image. Use for a profile README, personal masthead, or replacing widget and badge clutter.",
+  "version": "0.1.0",
+  "author": {
+    "name": "sjh9714",
+    "url": "https://github.com/sjh9714"
+  },
+  "homepage": "https://github.com/sjh9714/profile-cover",
+  "repository": "https://github.com/sjh9714/profile-cover",
+  "license": "MIT",
+  "keywords": [
+    "github-profile",
+    "profile-readme",
+    "typography",
+    "editorial",
+    "agent-skills",
+    "svg",
+    "design"
+  ]
+}

@@ -1,0 +1,23 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install shaping deps
+        run: pip install fonttools uharfbuzz
+      - name: Check shipped examples
+        run: |
+          cd skills/profile-cover/assets/examples
+          python3 ../../scripts/check_profile.py *.md *.svg
+      - name: Masthead generation smoke test
+        run: |
+          python3 skills/profile-cover/scripts/make_masthead.py masthead \
+            --name "Smoke Test" --eyebrow "CI" --tagline "Generated in CI." \
+            --accent-light "#B3382C" --accent-dark "#E0796A" --out /tmp/smoke
+          python3 skills/profile-cover/scripts/check_profile.py /tmp/smoke-light.svg /tmp/smoke-dark.svg
